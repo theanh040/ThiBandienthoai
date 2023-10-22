@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 5px 10px 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+section {
+    width: 1200px;
+    position: relative;
+    left: 145px;
+    
+}
+.nav {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    position: sticky;
+    top: 0;
+   z-index: 1000;
+}
+
+.slide-show {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+/* chay slide */
+.anhbia {
+    overflow: hidden;
+    max-width: 100%;
+    width: 60%;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+
+}
+
+.video1 {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.banner {
+    width: 3000px;
+    animation: banners 13s linear infinite;
+}
+
+.slideAnh {
+    float: left;
+    width: 680px;
+    margin-right: 10px;
+    height: 500px;
+    animation-direction: alternate;
+    /*chạy lần đầu tiên theo hướng ban đầu*/
+}
+.slideAnh img {
+    height: 500px;
+}
+@keyframes banners {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -960px;
+    }
+}
+
+hr {
+    width: 1000px;
+    color: black;
+    padding: 2px;
+    background: black;
+    margin: 15px;
+    margin-left: 100px;
+}
+
+#heading {
+    font-size: 25px;
+    color: #fff;
+    background: rgb(129, 209, 200);
+    background: linear-gradient(90deg, rgba(129, 209, 200, 1) 14%, rgba(232, 231, 126, 0.8823178929775035) 100%);
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.item {
+    display: flex;
+    padding: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.iphone-product {
+    display: flex;
+    padding: auto;
+    position: relative;
+    overflow: hidden;
+}
+.product-item {
+    display: flex;
+    padding: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.item,
+.iphone-product,
+.product-item {
+    scroll-behavior: smooth;
+}
+.box-item {
+
+    max-width: 222px;
+    height: 450px;
+    max-height: 500px;
+    padding: 20px;
+    border: none;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    border-radius: 15px;
+   
+}
+
+.box-item img {
+    width: 250px;
+    max-width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.box-item img:hover {
+    transform: scale(1.1);
+    /* Scale lên 1.1 lần khi hover vào ảnh */
+}
+.box-item h3 {
+    height: 65px;
+    overflow: hidden;
+    position: relative;
+}
+.box-item .price p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+    float: left;
+}
+.box-item p del {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.box-item p:hover {
+    color: red;
+}
+
+.box-item a {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #333;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px auto;
+    color: #FFF;
+    background: #f3a694;
+}
+
+.box-item a:hover {
+    color: #fff;
+    background-color: #333;
+}
+.box-item .star {
+    margin: 10px;
+    float: right;
+    color: rgb(248, 187, 31);
+}
+.box-item .wishlistbtn {
+    display: flex;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 100px;
+}
+.box-item .wishtext {
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 5px;
+}
+.box-item .wishtext:hover {
+    color: black;
+}
+.box-item button {
+    border: none;
+    background: none;
+    font-size: 22px;
+    color: #080808;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: dap 0.3s infinite;
+}
+.box-item button i:hover {
+    color: red;
+    
+}
+
+
+
+.btn {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 30px;
+    transition: 0.5s;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: #535050;
+}
+
+.dieuhuong .prev {
+    right: 30px;
+    top: 250px;
+}
+.dieuhuong .next {
+    left: 1200px;
+    top: 250px;
+}
+
+.price {
+    display: flex;
+}
+.shopping {
+    position: absolute;
+    top: 80%;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    
+}
+
+@keyframes dap {
+    0% {
+        transform: scale(1);
+       
+    }
+    30% {
+        transform: scale(1.05);
+      
+
+    }
+    60% {
+        transform: scale(1.1);
+       
+
+    }
+    90% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1.2);
+        
+
+    }
+}
+.footer {
+    width: 100%;
+    max-height: 100%;
+    height: 400px;
+}
+.chat {
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    bottom: 0;
+    left: 90%;
+    right: 0;
+
+}
+.chat button {
+    border: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #a4c7ec;
+    transition: 0.5s ease;
+    animation: scale 0.5s infinite;
+    cursor: pointer;
+    
+}
+.chat button i{
+    font-size: 40px;
+}
+.chat-1 {
+    border: 1px solid #000;
+    height: 200px;
+    width: 200px;
+}
+.boxchat {
+    font-size: 50px;
+   background: #fff;
+   z-index: 1000;
+}
+.chat-border {
+    border: 3px solid #000;
+    position: absolute;
+    right: 320px;
+    bottom: 30px;
+    height: 400px;
+    
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.boxchat input {
+    padding: 10px;
+    width: 250px;
+    position: relative;
+    top: 340px;
+    border: none;
+    font-size: 16px;
+    background: rgb(193, 186, 186);
+}
+.boxchat i {
+    font-size: 20px;
+   position: relative;
+   left: 240px;
+   z-index: 1000;
+   top: 283px;
+}
+.backtop {
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    bottom: 80px;
+    left: 90%;
+    right: 0;
+   
+}
+.backtop button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+}
+.backtop button i{
+    font-size: 20px;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

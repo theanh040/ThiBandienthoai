@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="user.css">
+  <script src="https://kit.fontawesome.com/e8e6ca6395.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <iframe src="nav.html" name="nav_iframe" referrerpolicy="no-referrer" class="nav"></iframe>
+  <div class="container">
+    <div class="content">
+      <h1>Đăng Nhập</h1>
+    </div>
+    <form id="loginForm" action="" class="dangnhap">
+      <div class="form-control">
+        <label for="username">Tên đăng nhập</label>
+        <input id="username" type="email" placeholder="Số điện thoại / Email">
+        <div class="error" id="usernameError"></div>
+      </div>
+
+      <div class="form-control">
+        <label for="password">Mật khẩu</label>
+        <input id="password" type="password" placeholder="Mật khẩu">
+        <div class="error" id="passwordError"></div>
+      </div>
+      <div class="signup">
+        <p>Chưa có tài khoản? <a href="singup.html"><strong>Đăng kí</strong></a></p>
+      </div>
+    </form>
+    <div class="action">
+      <button type="submit" class="btn" onclick="submit()">Đăng Nhập</button>
+    </div>
+  </div>
+
+
+  <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+
+</body>
+<script src="user.js"></script>
+
+</html>

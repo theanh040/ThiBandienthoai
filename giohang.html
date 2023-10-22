@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <script src="https://kit.fontawesome.com/e8e6ca6395.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+
+<body>
+    <iframe src="nav.html" frameborder="0" class="nav"></iframe>
+
+    <section>
+
+        <div class="uudai">
+            <p>Bạn có mã ưu đãi? <a href="">Ấn vào đây để nhập mã</a></p>
+
+        </div>
+
+
+        <div class="sanpham">
+
+            <table>
+                <tr>
+                    <th>SẢN PHẨM</th>
+                    <th class="banggia">GIÁ</th>
+                    <th class="soluong">SỐ LƯỢNG</th>
+                    <th class="tonggia">TỔNG</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="sanpham">
+                            <img src="/anh/dienthoai1.jpg" alt="">
+                            <a href="">Iphone 15 Promax</a>
+                        </div>
+                    </td>
+                    <td class="gia">23000000</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button>
+                            <input type="text" value="1">
+                            <button class="plus">+</button>
+                        </div>
+                    </td>
+                    <td class="last-pri"></td>
+                </tr>
+            </table>
+        </div>
+        <hr class="hr">
+        <div class="update">
+            <div class="xemsp"><a href="index.html">Tiếp tục xem sản phẩm</a></div>
+
+        </div>
+
+        <div class="tinhtien">
+            <div class="thanhtoan">
+                <h3>THÔNG TIN THANH TOÁN</h3>
+                <input type="text" placeholder="Họ và tên"><br>
+                <input type="text" placeholder="Địa chỉ giao hàng"><br>
+                <input type="text" placeholder="Số điện thoại"><br>
+                <input type="email" placeholder="Email">
+                <div class="xacnhan"> 
+                    <button class="confirm">Xác Nhận</button>
+                </div>
+            </div>
+            <div class="donhang">
+                <h3>ĐƠN HÀNG CỦA BẠN</h3>
+                <div class="sp-price">
+                    <span>SẢN PHẨM</span>
+                    <span>TỔNG</span>
+                </div>
+                <hr>
+                <div class="product-price">
+                    <span>Iphone 15 Promax</span>
+                    <span>23.000.000</span>
+                </div>
+                <hr>
+                <div class="first-price">
+                    <span>Tổng phụ</span>
+                    <span>23.000.000</span>
+                </div>
+                <hr>
+                <div>
+                    <span class="last-price">
+                        <span>Tổng</span>
+                        <span>23.000.000</span>
+                </div>
+                <hr>
+
+                <div class="pay">
+
+                    <div class="payfor1" onclick="payOnline()">
+                        <input type="radio" required>
+                        <span>Thanh toán Online</span>
+                    </div>
+
+                    <div class="payfor2" onclick="payCOD">
+                        <input type="radio" required>
+                        <span>Thanh toán khi nhận hàng</span>
+                    </div>
+                   
+                </div>
+                <p>    Thực hiện thanh toán vào ngay khi tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng Mã đơn hàng
+                    của bạn trong phần nội dung thanh toán. Đơn hàng sẽ được giao sau khi tiền đã chuyển.</p>
+                    <div class="box-pay">
+                        <button class="btn">Thanh Toán</button>
+                    </div>
+            </div>
+          
+        </div>
+
+
+    </section>
+
+
+    <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+
+</body>
+<script src="giohang.js"></script>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/e8e6ca6395.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <!-- trang đầu thiết kế layout 
+
+
+                tin tức sản phẩm -----news
+                        1
+
+                        2
+
+                        3
+
+                sản phẩm
+
+
+                giới thiệu
+                
+
+                1 số ảnh
+                
+
+
+                -->
+
+
+    <iframe src="nav.html" frameborder="0" class="nav"></iframe>
+
+    <div class="banner-bia">
+        <div class="bia1">
+            <a href=""><img src="./anh/sanphammoi.jpg" alt=""></a>
+        </div>
+        <div class="bia-group">
+            <div class="grp1">
+                <a href=""></a><img src="./anh/bia1.png" alt=""></a>
+            </div>
+            <div class="grp2">
+                <a href=""><img src="./anh/bia2.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="content">Tin Tức công nghệ</h1>
+    </div>
+    <hr>
+    <div class="tintuc">
+        <div class="news-pc">
+            <img src="./anh/thongbao.png" alt="">
+        </div>
+        <div class="text-1">
+            <a href="">
+                <h3>Chip A17 Pro gây rắc rối cho iPhone 15; Nvidia thành nhà thiết kế chip lớn nhất thế giới... là những
+                    tin tức công nghệ mới nóng nhất hôm nay 26/9/2023.</h3>
+            </a>
+            <p>Chip A17 Pro gây rắc rối cho iPhone 15; Nvidia thành nhà thiết kế chip lớn nhất thế giới... là những tin
+                tức công nghệ mới nóng nhất hôm nay 26/9/2023..</p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="sanphammoi">
+        <div class="text-1" style="background: rgb(126,154,232);
+        background: linear-gradient(90deg, rgba(126,154,232,0.9327380610447304) 10%, rgba(130,26,189,1) 100%);
+        ">
+            <a href="">
+                <h3>Iphone 15 pro mới ra mắt chính hãng tại Việt Nam vào ngày 26 /09 / 2023</h3>
+            </a>
+            <p>Apple vừa công bố bốn mẫu iPhone 15 mới trong sự kiện Wonderlust, bao gồm iPhone 15, 15 Plus, 15 Pro và
+                15
+                Pro Max. iPhone 15 và 15 Pro dùng màn hình 6.1 inch, còn iPhone 15 Plus và 15 Pro Max dùng màn hình 6.7
+                inch. Phiên bản Pro được làm từ titan siêu bền, chip A17 Pro với GPU 6 lõi, hệ thống camera 48MP thu
+                phóng
+                quang học lên tới 10x, nút Tác vụ (action) thay thế cho nút chuyển đổi Chuông/Âm lượng.</p>
+        </div>
+        <div class="moi">
+            <img src="./anh/sanphammoi.jpg" alt="">
+        </div>
+    </div>
+    <br>
+    <hr><br>
+    <div class="sanphammoi">
+        <div class="moi">
+            <img src="./anh/khuyenmai.jpg" alt="">
+        </div>
+        <div class="text-1">
+            <a href="">
+                <h3>Chương trính khuyến mãi đặc biệt</h3>
+            </a>
+            <p>háng nào trong năm 2023, Shopee cũng sẽ tung ra 3 đợt khuyến mãi. Mức độ lớn, nhỏ của từng đợt khuyến mãi
+                sẽ khác nhau. Thường những đợt khuyến mãi tung ra từ tháng 6 đến tháng 12 sẽ lớn hơn. Trong đó nổi bật
+                nhất là tháng 6, tháng 9, tháng 11 và tháng 12.
+
+                Cụ thể mỗi tháng, Shopee sẽ tung ra 3 chương trình khuyến mãi sau:
+
+                Sale đầu tháng: Thường diễn ra vào ngày đầu tháng, ví dụ: 1/1, 2/2, 3/3, 4/4…
+                Sale giữa tháng: Thường diễn ra vào ngày 15 hàng tháng, ví dụ: 15/2, 15/3, 15/4…
+                Sale cuối tháng: Thường diễn ra vào ngày 25 hoặc 27 hàng tháng, ví dụ: 25/2, 27/3…
+                Cụ thể chi tiết lịch sale Shopee trong từng tháng của năm 2023 ra sao bạn nhớ theo dõi các kênh mạng xã
+                hội của mình để được cập nhật nhanh nhất nhé!</p>
+        </div>
+    </div><br>
+    <hr>
+
+    <div class="chat">
+
+        <button class="chat-icon"><i class="fa-solid fa-headset"></i></button>
+
+        <div class="chat-border">
+            <div class="boxchat">
+                <input type="text" placeholder="Bạn cần trợ giúp gì?">
+                <i class="fa-solid fa-reply"></i>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+
+
+
+    <script>
+        // Lấy icon và box chat
+        const chatIcon = document.querySelector('.chat-icon'); // Use .chat-icon instead of #chat-icon
+        const chatBox = document.querySelector('.chat-border'); // Use .chat-border instead of #chat-border
+
+        let isOpen = false;
+
+        // Xử lý click icon
+        chatIcon.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            if (!isOpen) {
+                // nếu đóng thì mở box chat
+                chatBox.style.display = 'flex';
+                isOpen = true;
+            } else {
+                // nếu mở thì đóng box chat
+                chatBox.style.display = 'none';
+                isOpen = false;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

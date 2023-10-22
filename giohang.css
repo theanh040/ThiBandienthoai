@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: sans-serif;
+}
+body {
+    padding: 20px;
+    max-width: 100%;
+}
+.uudai {
+    padding: 10px;
+   
+    font-size: 18px;
+    color: #333;
+}
+.uudai a {
+    text-decoration: none;
+    color: red;
+}
+table {
+    width: 100%;
+}
+table tr {
+    position: relative;
+    right: 170px;
+    top: 20px;
+}
+table .sanpham {
+    display: flex;
+    margin-left: 130px;
+}
+table tr img {
+    width: 220px;
+    position: relative;
+    left: 250px;
+    top: 20px
+}
+table a {
+    position: relative;
+    top: 60px;
+    left: 200px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+table a:hover {
+    color: red;
+    text-decoration: underline;
+}
+table .banggia {
+    position: relative;
+    right: 170px;
+} 
+table .gia {
+    position: relative;
+    right: 130px;
+   
+}
+table .soluong {
+    position: relative;
+    right: 120px;
+}
+table .quantity {
+    position: relative;
+    right: 70px;
+}
+table .tonggia {
+    position: relative;
+    right: 50px;
+}
+
+
+.quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity button {
+    width: 20px;
+    height: 34px;
+    font-size: 20px;
+    border: 1px solid #333;
+    background: #fbf8f8;
+    cursor: pointer;
+  }
+  
+  .quantity input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .hr {
+    position: relative;
+    top: 50px
+  }
+  .xemsp {
+    position: relative;
+    top: 70px;
+    border: 3px solid #d24e15;
+    display: inline-block;
+    margin: 7px 0 0 50px;
+    padding: 7px;
+    
+    
+    cursor: pointer;
+  }
+  .xemsp a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #d24e15;
+  }
+.tinhtien {
+    position: relative;
+    top: 100px;
+    display: flex;
+    
+}
+.thanhtoan {
+    width: 60%;
+    margin: 0 0 0 200px;
+    
+}
+.thanhtoan h3{
+  margin: 10px 0 0 20px;
+  padding: 10px;
+}
+.thanhtoan input {
+    margin: 5px 0 15px 30px;
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+}
+.donhang {
+    width: 40%;
+    margin: 20px 150px 0 0;
+    padding: 10px;
+    border: 4px solid #d24e15;
+    
+}
+.sp-price, .product-price, .first-price, .last-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.product-price span:last-child {
+    color: red;
+    font-weight: 800;
+}
+.first-price span:last-child {
+    color: red;
+    font-weight: 800;
+}
+.last-price span:last-child {
+    color: red;
+    font-weight: 800;
+}
+ 
+.pay {
+    display: flex;
+    margin: 5px ;
+    padding: 15px;
+}
+.payfor1 {
+    margin: 0 30px 0 0;
+}
+.donhang p {
+    text-align: justify;
+    margin: 10px;
+}
+.box-pay {
+    text-align: center;
+    margin: 10px;
+    padding: 15px 0 0 0;
+}
+.btn {
+    padding: 10px 15px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.btn:hover {
+    background: #d24e15;
+    color: #fff;
+}
+.nav {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    position: sticky;
+    top: 0;
+   z-index: 1000;
+}
+.xacnhan {
+    position: relative;
+    left: 220px;
+}
+.confirm {
+    padding: 10px 10px;
+    margin: 10px;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.confirm:hover {
+    background: #d24e15;
+    color: #fff;
+}
+.footer {
+    position: relative;
+    margin: 100px 0 0 0;
+    width: 100%;
+    max-height: 100%;
+    height: 400px;
+    bottom: 0;
+}
